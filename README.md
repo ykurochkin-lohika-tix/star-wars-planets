@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
+## Tasks for version 1.1.0 
+- add more unit tests
+- add models, now dtos are used only
+- find a cool design and add an adaptive layout
+- implement request pagination
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
