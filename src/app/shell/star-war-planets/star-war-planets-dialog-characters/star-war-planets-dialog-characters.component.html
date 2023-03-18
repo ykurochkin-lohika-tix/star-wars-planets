@@ -1,0 +1,56 @@
+<!-- todo add check if no items in data and some info component instead -->
+<table mat-table [dataSource]="data" class="mat-elevation-z8 planet-table">
+  <!-- Name -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef>Name</th>
+    <td mat-cell *matCellDef="let element">{{element.name}}</td>
+  </ng-container>
+
+  <!-- Mass Column -->
+  <ng-container matColumnDef="mass">
+    <th mat-header-cell *matHeaderCellDef>Mass</th>
+    <td mat-cell *matCellDef="let element">{{element.mass}}</td>
+  </ng-container>
+
+  <!-- Height Column -->
+  <ng-container matColumnDef="height">
+    <th mat-header-cell *matHeaderCellDef>Height</th>
+    <td mat-cell *matCellDef="let element">{{element.height}}</td>
+  </ng-container>
+
+  <!-- Hair color Column -->
+  <ng-container matColumnDef="hair_color">
+    <th mat-header-cell *matHeaderCellDef>Hair color</th>
+    <td mat-cell *matCellDef="let element">{{element.hair_color}}</td>
+  </ng-container>
+
+  <!-- Skin color Column -->
+  <ng-container matColumnDef="skin_color">
+    <th mat-header-cell *matHeaderCellDef>Skin color</th>
+    <td mat-cell *matCellDef="let element">{{element.skin_color}}</td>
+  </ng-container>
+
+  <!-- Eye color Column -->
+  <ng-container matColumnDef="eye_color">
+    <th mat-header-cell *matHeaderCellDef>Eye color</th>
+    <td mat-cell *matCellDef="let element">{{element.eye_color}}</td>
+  </ng-container>
+
+  <!-- Birth year Column -->
+  <ng-container matColumnDef="birth_year">
+    <th mat-header-cell *matHeaderCellDef>Birth year</th>
+    <td mat-cell *matCellDef="let element">{{element.birth_year}}</td>
+  </ng-container>
+
+  <!-- Gender Column -->
+  <ng-container matColumnDef="gender">
+    <th mat-header-cell *matHeaderCellDef>Gender</th>
+    <td mat-cell *matCellDef="let element">{{element.gender}}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedCharacterColumns"></tr>
+  <tr
+      mat-row
+      *matRowDef="let row; columns: displayedCharacterColumns;"
+  ></tr>
+</table>

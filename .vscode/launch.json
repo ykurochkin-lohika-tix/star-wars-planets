@@ -22,6 +22,22 @@
       "request": "launch",
       "preLaunchTask": "npm: test",
       "url": "http://localhost:9876/debug.html"
+    },
+    {
+      "name": "Debug Frontend",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "preLaunchTask": "Serve Frontend",
+      "url": "http://localhost:4200/#",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:/*": "${webRoot}/*",
+        "/./*": "${webRoot}/*",
+        "/src/*": "${webRoot}/src/*",
+        "/*": "*",
+        "/./~/*": "${workspaceFolder}/node_modules/*"
+      }
     }
   ]
 }

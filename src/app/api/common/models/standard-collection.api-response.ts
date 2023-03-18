@@ -1,5 +1,5 @@
 export interface IStandardCollectionApiResponse<TItem> {
-  content: TItem[];
+  results: TItem[];
   count: number;
   next: string;
   previous: string;

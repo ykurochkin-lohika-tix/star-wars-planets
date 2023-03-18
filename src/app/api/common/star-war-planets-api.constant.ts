@@ -1,1 +1,1 @@
-export const API_URL_PREFIX = 'https://swapi.dev/api/';
+export const API_URL_PREFIX = 'https://swapi.dev/api';
