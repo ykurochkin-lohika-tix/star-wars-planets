@@ -7,6 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - add models, now dtos are used only
 - find a cool design and add an adaptive layout
 - implement request pagination
+- add cache and error intercepor
 
 ## Development server
 
